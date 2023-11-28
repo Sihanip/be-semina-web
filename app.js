@@ -10,6 +10,7 @@ const categoriesRouter = require('./app/api/v1/categories/routes');
 const imagesRouter = require('./app/api/v1/images/routes');
 const talentsRouter = require('./app/api/v1/talents/routes');
 const eventsRouter = require('./app/api/v1/events/routes');
+const organizerRouter = require('./app/api/v1/organizers/router');
 
 const v1 = '/api/v1/cms';
 
@@ -34,6 +35,8 @@ app.use(v1, categoriesRouter);
 app.use(v1, imagesRouter);
 app.use(v1, talentsRouter);
 app.use(v1, eventsRouter);
+app.use(v1, organizerRouter);
+
 
 // penggunaan middlewares dibawah router
 app.use(notFoundMiddleware);

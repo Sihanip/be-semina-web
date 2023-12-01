@@ -17,6 +17,10 @@ let talentSchema = Schema(
       ref: 'Image',
       required: true,
     },
+    organizer: {
+      type: String,
+      required: [true, 'Peyelenggara harus diisi'],
+    },
   },
   { timestamps: true }
 );

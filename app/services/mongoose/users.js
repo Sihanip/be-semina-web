@@ -42,10 +42,10 @@ const createUsers = async (req, res) => {
     return result;
   };
   
-//   const getAllUsers = async (req) => {
-//     const result = await Users.find();
+  const getAllUsers = async (req) => {
+    const result = await Users.find();
   
-//     return result;
-//   };
+    return result;
+  };
 
-module.exports = { createOrganizers, createUsers }
+module.exports = { createOrganizers, createUsers, getAllUsers }

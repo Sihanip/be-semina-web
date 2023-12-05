@@ -8,13 +8,14 @@ const createTokenUsers = (user) => {
     };
   };
   
-//   const createTokenParticipant = (participant) => {
-//     return {
-//       lastName: participant.lastName,
-//       participantId: participant._id,
-//       firstName: participant.firstName,
-//       email: participant.email,
-//     };
-//   };
+  const createTokenParticipant = (participant) => {
+    return {
+      lastName: participant.lastName,
+      participantId: participant._id,
+      firstName: participant.firstName,
+      email: participant.email,
+    };
+  };
   
-  module.exports = { createTokenUsers };
+  
+  module.exports = { createTokenUsers, createTokenParticipant };

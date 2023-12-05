@@ -12,6 +12,7 @@ const talentsRouter = require('./app/api/v1/talents/routes');
 const eventsRouter = require('./app/api/v1/events/routes');
 const organizerRouter = require('./app/api/v1/organizers/router');
 const authCMSRouter = require('./app/api/v1/auth/router');
+const ordersRouter = require('./app/api/v1/orders/router');
 
 const v1 = '/api/v1/cms';
 
@@ -38,6 +39,8 @@ app.use(v1, talentsRouter);
 app.use(v1, eventsRouter);
 app.use(v1, organizerRouter);
 app.use(v1, authCMSRouter);
+app.use(v1, ordersRouter);
+
 
 
 // penggunaan middlewares dibawah router
